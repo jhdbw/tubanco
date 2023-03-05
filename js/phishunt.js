@@ -1,8 +1,9 @@
 var myOrg = '18';
 var myDomain = 'tubanco.com.py';
+var myDomain2 = 'www.tubanco.com.py';
 var target = 'http://127.0.0.1:5000/api';
 var hostname = window.location.hostname;
-if ( hostname != myDomain) {
+if ( hostname !== myDomain && hostname !== myDomain2) {
 const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
   .then(FingerprintJS => FingerprintJS.load())
 fpPromise
